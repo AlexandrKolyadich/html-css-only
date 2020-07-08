@@ -1,0 +1,425 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+
+
+
+/* стили для user-profile- и все что внутри*/
+.user-profile{
+    width: 25%;
+    min-height: 100vh;
+    background-color: #eaf0f7;
+    border-right: 1px solid rgba(191, 191, 191, 0.5);
+}
+
+.user-profile-interface{
+    width: 500%;
+    min-height: 30vh;
+    
+
+}
+
+.user-profile-interface-first{
+    width: 20%;
+    min-height: 20vh;
+    border-bottom: 1px solid rgba(191, 191, 191, 0.5);
+}
+
+
+.user-profile-interface-first-name{
+    
+    display: flex;
+}
+
+.user-profile-interface-first-name-logo{
+    cursor: pointer;
+    width: 50px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.user-profile-interface-first-name-balance{
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 27px;
+    color:gray;
+
+}
+
+.user-profile-interface-first-name-name{
+
+    margin-left: 5px;
+    margin-top: 27px;
+
+    font-size: 14px;
+}
+
+.user-profile-interface-first-name-logo img{
+
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    
+}
+
+.user-profile-interface-first-name-ap {
+    margin-left: 80px;
+    margin-top: 27px;
+}
+
+
+/*стили для user-profile-  и все что внутри  finish */
+
+
+/*  стили для инпута сверху */
+.user-profile-interface-first-search{
+    border: solid 1px gray;
+    display: flex;
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.user-profile-interface-first-search:focus-within{
+    border: solid 1px blue;
+}
+
+.user-profile-interface-first-search-glass{
+    display: flex;
+    align-items: center;
+   
+}
+
+.user-profile-interface-first-search-placeholder-input{
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    outline: none;
+    border: none;
+    border: solid 1px white;
+    border-right: solid 1px grey;
+
+    
+}
+
+
+.user-profile-interface-first-search-settings{
+    box-sizing: border-box;
+
+    
+
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+/* иконочки */
+
+.user-profile-interface-first-icons{
+    width: 89%;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+   justify-content: space-between;
+   color: gray;
+
+}
+
+.user-profile-interface-first-icons-chats-helper, .user-profile-interface-first-icons-notific-helper, .user-profile-interface-first-icons-calls-helper, .user-profile-interface-first-icons-contacts-helper{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* user-profile-interface-footer */
+
+.user-profile-interface-footer-twoBut{
+    margin-top: 15px;
+    
+    width: 17%;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-profile-interface-footer-twoBut-meeting, .user-profile-interface-footer-twoBut-newChats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    color: gray;
+    width: 100px;
+    font-size: 14px;
+}
+
+.user-profile-interface-first-icons-chats:hover, .user-profile-interface-first-icons-calls:hover, .user-profile-interface-first-icons-contacts:hover, .user-profile-interface-first-icons-notific:hover, .user-profile-interface-footer-twoBut-meeting:hover, .user-profile-interface-footer-twoBut-newChats:hover{
+    color: black;
+
+}
+
+.user-profile-interface-footer-chatsBut{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: gray;
+}
+.user-profile-interface-footer-chatsBut:hover{
+    color: black;
+}
+
+.user-profile-chats-men{
+ 
+    display: flex;
+   font-size: 14px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.user-profile-chats-men:hover{
+    background-color: blue;
+}
+
+.user-profile-chats-men-img, .avatar{
+    width: 50px;
+    height: 70px;
+}
+
+.user-profile-chats-men img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+
+.user-profile-chats{
+   overflow: scroll; 
+   height: 70vh;
+}
+
+.user-profile-chats-men-text-message{
+    color:gray
+}
+
+.time{
+    margin-left: auto;
+}
+
+.user-profile-chats-men-text{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* правая часть*/
+
+.user-chat {
+    
+    width: 80%;
+    min-height: 100vh;
+
+}
+
+.user-chat-header-info{
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 80%;
+  
+}
+
+.user-chat-header{
+    border-bottom: solid 1px rgba(191, 191, 191, 0.7);
+    width: 100%;
+    min-height: 7vh;
+   display: flex; 
+   
+    
+}
+
+.user-chat-header-info-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-chat-header-info-under-active-now{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    background: #36b37e;
+    border-radius: 50%;
+}
+
+.user-chat-header-info-under{
+    font-size: 12px;
+    width: 30%;
+    margin-top: 5px;
+    
+}
+
+.user-chat-header-info-under, .user-chat-header-info-under-active, .user-chat-header-info-under-gallery, .user-chat-header-info-under-find{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.user-chat-header-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 20%;
+    
+}
+
+
+.user-chat-header-icons-camera, .user-chat-header-icons-call, .user-chat-header-icons-add{
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.user-chat-header-icons-camera:hover, .user-chat-header-icons-call:hover, .user-chat-header-icons-add:hover{
+    background-color: bisque;
+}
+.user-chat-header-icons span{
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+.user-chat-chat{
+    width: 100%;
+    height: 80vh;
+    overflow: scroll; 
+    
+}
+
+.data{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    
+}
+
+.avatar{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.avatar img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.message-myFriend{
+    display: flex;
+   
+    height: 55px;
+   
+}
+
+.message-myFriend-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.message-myFriend-text-message{
+    padding: 7px;
+    border-radius: 2px 8px 8px;
+    background-color: gray;
+}
+
+
+.my-message{
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.my-message div {
+    padding: 7px;
+    border-radius: 2px 8px 8px;
+    background-color: gray;
+}
+
+.typing{
+    width: 100%;
+    height: 11%;
+    
+}
+
+.last-first, .last-smyle, .last-second, .last-third, .last-fourth{
+    display: flex;
+    align-items: center;
+}
+
+.last {
+    margin-left: 10px;
+    width: 80%;
+    height: 70%;
+   
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.last .last-input {
+    width: 100%;
+    background-color: green;
+}
+
+.last-input input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    
+    border: solid 1px white;
+}
+
+.icnons{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.last span{
+   font-size: 50px;
+   padding: 5px;
+} 
+
+.last-first, .last-smyle, .last-second, .last-third, .last-fourth{
+    margin-left: 5px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+}
