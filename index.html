@@ -4,6 +4,7 @@
     <meta charset ="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skype</title>
+    <script src="external.js" defer></script>
     <link href="./styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -387,11 +388,18 @@
                             <div clas = user-chat-header-info-under-active-text> Active now </div>
                         </div>
                         <div class = "user-chat-header-info-under-gallery">
-                            <span class="material-icons">photo_library</span>
+                        
+                                <span class="material-icons">photo_library</span>
+
+                        
+                           
                             <div class = "user-chat-header-info-under-gallery-text">Gallery</div>
                         </div>
                         <div class = "user-chat-header-info-under-find">
-                            <span class="material-icons">search</span>
+                            
+                                <span class="material-icons">search</span>
+                            
+                            
                             <div class = "user-chat-header-info-under-find-text">Find</div>
                         </div>
                     </div>
@@ -559,26 +567,38 @@
 
             <div class = "typing">
                 <div class = "last">
-                    <div class = "last-smyle"> 
-                        <span class="material-icons">sentiment_satisfied_alt</span>
+                    <div class ="qqq">
+                        <div class = "last-smyle"> 
+                            <span class="material-icons">sentiment_satisfied_alt</span>
+                        </div>
+                        <div class = "last-input">
+                            <input type = "text" class = "form" placeholder="Enter your message">
+                        </div>
+                       
                     </div>
-                    <div class = " last-input">
-                        <input placeholder="Enter your message">
-                    </div>
-                <div class = "icnons">
-                    <div class = "last-first">
-                        <span class="material-icons">description</span>
-                    </div>
-                    <div class = "last-second">
-                        <span class="material-icons">perm_media</span>
-                    </div>
-                    <div class = "last-third">
-                        <span class="material-icons">keyboard_voice</span>
-                    </div>
-                    <div class = "last-fourth">
-                        <span class="material-icons">more_horiz</span>
-                    </div>
-                </div>
+                    
+                   <div class = "messages">
+
+                        <form id="upload-container" method="POST" action="send.php">
+                            <div>
+                                 <input id="file-input" type="file" name="file" multiple>
+                                 <label for="file-input"><span class="material-icons">description</span></label>
+                                 
+                            </div>
+                        </form>     
+                        
+                        <form>
+                            <span class="material-icons">perm_media</span>
+                        </form>
+
+                        <form>
+                            <span class="material-icons">keyboard_voice</span>
+                        </form>
+
+                        <div>
+                            <span class="material-icons">more_horiz</span>
+                        </div>
+                   </div>
                    
                 </div>
             </div>
@@ -588,3 +608,4 @@
 
     </div>
 </body>
+
