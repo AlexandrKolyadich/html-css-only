@@ -466,14 +466,14 @@ label span{
     border-radius: 50%;
 }
 
-form span, div span{
+form span, .more span{
     font-size: 18px;
     background-color: #f1f1f4;
     border-radius: 50%;
 }
 
 
-label span:hover, form span:hover, div span:hover{
+label span:hover, form span:hover, .more span:hover{
     background-color: #e6e5e9;
 }
 
