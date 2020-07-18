@@ -7,6 +7,7 @@
     <script src="external.js" defer></script>
     <link href="./styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -58,7 +59,7 @@
                             <div class = "user-profile-interface-first-icons-chats-helper">
                                 <span class="material-icons">chat</span>
                             </div>
-                            <div>
+                            <div class = "ch">
                                 Chats
                             </div>
                                 
@@ -70,7 +71,7 @@
                                 <span class="material-icons">phone</span>
                                 
                             </div>
-                            <div>
+                            <div class = "ch">
                                 Calls
                             </div>
                            
@@ -81,7 +82,7 @@
                                 <span class="material-icons">account_box</span>
                             </div>
                             
-                            <div>
+                            <div class = "ch">
                                 Contacts
                             </div>
                         </div>
@@ -91,7 +92,7 @@
                                 <span class="material-icons">notifications</span>
                             </div>
                            
-                            <div>
+                            <div class = "ch">
                                 Notifications
                             </div>
                         </div>
@@ -579,7 +580,7 @@
                     
                    <div class = "messages">
 
-                        <form id="upload-container" method="POST" action="send.php">
+                        <form id="upload-container" method="POST" >
                             <div>
                                  <input id="file-input" type="file" name="file" multiple>
                                  <label for="file-input"><span class="material-icons">description</span></label>
@@ -587,11 +588,15 @@
                             </div>
                         </form>     
                         
-                        <form>
+                        <form id="upload-container">
+                            <input id="url-input" type="url">
+                            <label for="url-input"></label>
                             <span class="material-icons">perm_media</span>
                         </form>
 
-                        <form>
+                        <form id="upload-container"> 
+                            <input id="audio-input" type="audio">
+                            <label for="audio-input"></label>
                             <span class="material-icons">keyboard_voice</span>
                         </form>
 
