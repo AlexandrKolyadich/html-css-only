@@ -1,10 +1,15 @@
 body{
     margin: 0;
+    overflow: hidden;
+    
     font-family: 'Mulish', sans-serif;
     font-size: 14px;
+    
+   
 }
 
 .wrapper{
+
     width: 100%;
     height: 100%;
     display: flex;
@@ -17,56 +22,60 @@ body{
 
 
 
+
 /* стили для user-profile- и все что внутри*/
 .user-profile{
-    width: 25%;
-    min-height: 100vh;
+    width: 21%;
+    height: 100vh;
     background-color: #f1f4f8;
     border-right: 1px solid rgba(191, 191, 191, 0.5);
 }
 
 .user-profile-interface{
-    width: 500%;
+    width: 100%;
     min-height: 30vh;
-    
 
 }
 
 .user-profile-interface-first{
-    width: 20%;
+    width: 100%;
     min-height: 20vh;
     border-bottom: 1px solid rgba(191, 191, 191, 0.5);
+
 }
 
 
 .user-profile-interface-first-name{
-    
+    font-size: 12px;
     display: flex;
+    height: 60px;
+
+   
 }
 
 .user-profile-interface-first-name-logo{
     cursor: pointer;
-    width: 50px;
-    height: 70px;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 40px;
+    height: 60px;
+    margin-left: 7px;
+    margin-top: 7px;
 
 }
 
 .user-profile-interface-first-name-balance{
     cursor: pointer;
-    margin-left: 5px;
-    margin-top: 27px;
+    margin-left: 7px;
+    margin-top: 20px;
     color:gray;
 
 }
 
 .user-profile-interface-first-name-name{
 
-    margin-left: 5px;
-    margin-top: 27px;
+    margin-left: 7px;
+    margin-top: 20px;
 
-    font-size: 14px;
+    
 }
 
 .user-profile-interface-first-name-logo img{
@@ -78,8 +87,8 @@ body{
 }
 
 .user-profile-interface-first-name-ap {
-    margin-left: 80px;
-    margin-top: 27px;
+    margin-left: 90px;
+    margin-top: 14px;
 }
 
 
@@ -88,21 +97,32 @@ body{
 
 /*  стили для инпута сверху */
 .user-profile-interface-first-search{
-    border: solid 1px gray;
+    border: solid 1px rgba(191, 191, 191, 0.5);
+    font-size: 10px;
+
     display: flex;
     position: relative;
     background-color: white;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 7px;
     border-radius: 4px;
-    margin-right: 20px;
+    margin-right: 12px;
+    height: 28px;
+    width: 300px;
+
 }
 
 
 .user-profile-interface-first-search-glass{
+    margin-left: 5px;
     display: flex;
     align-items: center;
    
+}
+
+.user-profile-interface-first-search-glass span{
+    color: gray;
+    font-size: 20px;
 }
 
 .user-profile-interface-first-search-placeholder-input{
@@ -113,13 +133,14 @@ body{
     outline: none;
     border: none;
     border: solid 1px white;
-    border-right: solid 1px grey;
+    border-right: solid 1px rgba(191, 191, 191, 0.5);
 
     
 }
 
 .user-profile-interface-first-search-settings span{
     font-size: 20px;
+    color: gray;
 }
 .user-profile-interface-first-search-settings{
     box-sizing: border-box;
@@ -137,8 +158,8 @@ body{
 
 .user-profile-interface-first-icons{
     width: 89%;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 17px;
+    margin-left: 25px;
     display: flex;
    justify-content: space-between;
    color: #3c3d44;
@@ -147,13 +168,16 @@ body{
 
 .ch{
     font-size: 11px;
+    color: gray
 }
 
 .user-profile-interface-first-icons-chats-helper, .user-profile-interface-first-icons-notific-helper, .user-profile-interface-first-icons-calls-helper, .user-profile-interface-first-icons-contacts-helper{
     display: flex;
     justify-content: center;
+}
 
-
+.user-profile-interface-first-icons-chats-helper span, .user-profile-interface-first-icons-notific-helper span, .user-profile-interface-first-icons-calls-helper span, .user-profile-interface-first-icons-contacts-helper span{
+    font-size: 20px;
 }
 
 
@@ -162,8 +186,8 @@ body{
 .user-profile-interface-footer-twoBut{
     margin-top: 15px;
     
-    width: 17%;
-    margin-left: 30px;
+    width: 97%;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -173,10 +197,13 @@ body{
     align-items: center;
     justify-content: center;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 16px;
     color: #3c3d44;
-    width: 100px;
-    font-size: 14px;
+    width: 145px;
+    border: solid 1px rgba(191, 191, 191, 0.7);
+    height: 30px;
+    
+    
 }
 
 .user-profile-interface-first-icons-chats:hover, .user-profile-interface-first-icons-calls:hover, .user-profile-interface-first-icons-contacts:hover, .user-profile-interface-first-icons-notific:hover, .user-profile-interface-footer-twoBut-meeting:hover, .user-profile-interface-footer-twoBut-newChats:hover{
@@ -188,21 +215,24 @@ body{
     display: flex;
     align-items: center;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     color: #8f9195;
+    font-weight: bold;
+    font-size: 11px;
 }
 .user-profile-interface-footer-chatsBut:hover{
     color: #a7aaae;
 }
 
 .user-profile-chats-men{
- 
+    box-sizing: border-box;
     display: flex;
+    align-items: center;
    font-size: 14px;
     cursor: pointer;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
+   
+    margin-left: 7px;
+   
     height: 50px;
 }
 
@@ -211,8 +241,15 @@ body{
 }
 
 .user-profile-chats-men-img, .avatar{
+    width: 40px;
+    height: 40px;
+}
+
+.avatar1{
     width: 50px;
-    height: 70px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 .user-profile-chats-men img{
@@ -229,9 +266,20 @@ body{
     align-items: center;
 }
 
+.user-profile-interface-footer-twoBut-newChats-helper span, .user-profile-interface-footer-twoBut-meeting-helper span{
+    font-size: 20px;
+}
+
+.hhh{
+    font-size: 11px;
+    color: gray;
+    margin-left: 5px;
+}
 .user-profile-chats{
-   overflow-y: scroll; 
-   height: 70vh;
+   overflow-y: scroll;
+   margin-top: 10px; 
+   height: 67%;
+
 }
 
 .user-profile-chats-men-text-message{
@@ -240,6 +288,11 @@ body{
 
 .time{
     margin-left: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    align-self: start;
+    color: gray;
 }
 
 .user-profile-chats-men-text{
@@ -252,9 +305,10 @@ body{
 /* правая часть*/
 
 .user-chat {
+
+    width: 79%;
+    height: 100%;
     
-    width: 80%;
-    min-height: 100vh;
 
 }
 
@@ -273,7 +327,7 @@ body{
 .user-chat-header{
     border-bottom: solid 1px rgba(191, 191, 191, 0.7);
     width: 100%;
-    min-height: 7vh;
+    height: 11.7vh;
     display: flex; 
     justify-content: space-between;
    
@@ -373,7 +427,7 @@ body{
     margin-left: 10px;
 }
 
-.avatar img{
+.avatar img, .avatar1 img{
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
@@ -381,8 +435,8 @@ body{
 
 .message-myFriend{
     display: flex;
-   
     height: 55px;
+    padding-left: 60px;
    
 }
 
@@ -400,11 +454,48 @@ body{
 
 
 .my-message{
+
     margin-top: 10px;
-    margin-right: 50px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    
+}
+
+
+.my-message div{
+    max-width: 70%;
+}
+.sendTime{
     display: flex;
     justify-content: flex-end;
-    
+    color: gray;
+    font-size: 12px;
+    padding-bottom: 5px;
+    background-color: white !important;
+}
+
+.my-message-link{
+    margin-top: 10px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my-message-link .link-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f4f8;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.my-message-link .link-bottom{
+    background-color: #f1f4f8;
+    border-radius: 0px 0px 8px 8px;
 }
 
 .my-message div {
@@ -426,12 +517,13 @@ body{
 
 .last {
     margin-left: 60px;
-    width: 90%;
+    width: 84%;
     height: 50%;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    
+    margin-left: 115px;
+   
 
     
 }
@@ -504,7 +596,7 @@ label span:hover, form span:hover, .more span:hover{
     justify-content: space-between;
      align-items: center;
     
-     width: 14vw;
+     width: 12vw;
 }
 
 #upload-container {
@@ -528,3 +620,169 @@ label span:hover, form span:hover, .more span:hover{
     position: absolute;
     z-index: -10;
 }
+
+
+.link-up{
+    width: 186px;
+    height: 102px;
+    margin-bottom: 4px;
+}
+
+.link-bottom{
+    width: 186px;
+    height: 52px;
+}
+
+.link-login{
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+.link-name, .link-bottom{
+    font-size: 16px;
+    font-weight: bold;
+}
+.link-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-message-img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-right: 70px;
+    
+
+}
+
+.imgSend{
+    height: 180px;
+    display: flex;
+    
+}
+
+.imgSend img{
+    border-radius: 8px 8px 0px 0px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.last-img{
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+.arrow{
+    margin-bottom: 9px;
+    margin-right: 10px;
+    color: gray;
+}
+
+.resend{
+    margin-right: 10px;
+    
+}
+
+.resend-my-message-url span{
+    color: gray;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.resend-url{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.resend span, .resend-url span{
+    color: gray;
+    font-size: 18px;
+}
+
+hr {
+    width: 100px;
+    border: none; /* Убираем границу */
+    background-color: gray; /* Цвет линии */
+    color: gray; /* Цвет линии для IE6-7 */
+    height: 4px; /* Толщина линии */
+
+   }
+
+   .voice{
+       display: flex;
+       align-items: center;
+   }
+
+   .my-message-audio{
+    
+    margin-top: 10px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    
+    
+
+   }
+
+   .voice-blue{
+    padding: 7px;
+    border-radius: 2px 8px 8px;
+    background-color: #cfedfb;
+   }
+
+   .forcolor{
+    background-color: #cfedfb;
+    border-bottom-left-radius: 4px;
+   }
+
+   .my-message-url-img{
+       display: flex;
+   }
+
+   .two-divs{
+       display: flex;
+       margin-top: 5px;
+       font-size: 18px;
+       font-weight: bold;
+       margin-left: 10px;
+   }
+
+   .two-divs-first{
+       padding-right: 5px;
+       border-right: 2px solid black;
+   }
+.two-divs-second{
+    padding-left: 5px;
+}
+ .my-message-url{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     margin-right: 70px;
+ }
+
+
+ .forcolor{
+    background-color: #f1f4f8;
+ }
+ .forcolor-text{
+
+     margin-top: 7px;
+     font-size: 12px;
+     margin-left: 10px;
+     max-width: 350px;
+     color: gray;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ .this-url{
+     margin-top: 5px;
+     margin-bottom: 10px;
+ }
